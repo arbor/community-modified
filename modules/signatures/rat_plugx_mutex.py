@@ -21,13 +21,17 @@ class PlugxMutexes(Signature):
     severity = 3
     categories = ["rat"]
     families = ["plugx"]
-    authors = ["threatlead", "nex"]
-    references = ["https://malwr.com/analysis/YTZjYmUwMzNlNzkwNGU5YmIxNDQwYTcyYjFkYWI0NWE/"]
+    authors = ["threatlead", "nex","arbor-jjones",]
+    references = [
+                    "https://malwr.com/analysis/YTZjYmUwMzNlNzkwNGU5YmIxNDQwYTcyYjFkYWI0NWE/",
+                    "https://malwr.com/analysis/MTg5MzY0MDdmZGFkNDJkNGE3ZTcxN2Q0YzU0M2ZlMGI/",
+                 ]
     minimum = "0.5"
 
     def run(self):
         indicators = [
             "DoInstPrepare",
+            "My_Name",
         ]
 
         for indicator in indicators:
